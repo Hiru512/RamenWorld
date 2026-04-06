@@ -34,6 +34,10 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def on_ready():
     print(f"로그인 완료: {bot.user}")
 
+@bot.event
+async def on_ready():
+    print(f"로그인 완료: {bot.user}")
+    print("등록된 명령어:", [cmd.name for cmd in bot.commands])
 
     '''on_message'''
 @bot.event
