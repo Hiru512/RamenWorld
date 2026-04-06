@@ -30,9 +30,9 @@ bot = commands.Bot(command_prefix="!", intents=intents)
         *역할*
         - 봇 로그인 확인
         - 디버깅용(정상 작동 체크)'''
-@bot.event
+'''@bot.event
 async def on_ready():
-    print(f"로그인 완료: {bot.user}")
+    print(f"로그인 완료: {bot.user}")'''
 
 @bot.event
 async def on_ready():
