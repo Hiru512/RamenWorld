@@ -34,10 +34,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def on_ready():
     print(f"로그인 완료: {bot.user}")
 
-@bot.event
-async def on_ready():
-    print(f"로그인 완료: {bot.user}")
-    print("등록된 명령어:", [cmd.name for cmd in bot.commands])
 
     '''on_message'''
 @bot.event
@@ -61,8 +57,8 @@ def create_ramen_command(ramen_type):
 
         return command
     
-    for ramen_type in ramen_data.keys():
-        bot.command(name=f"{ramen_type}라멘")(create_ramen_command(ramen_type))
+for ramen_type in ramen_data.keys():
+    bot.command(name=f"{ramen_type}라멘")(create_ramen_command(ramen_type))
 
 
 '''명령어 만들기
