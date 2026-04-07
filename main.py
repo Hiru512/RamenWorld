@@ -67,14 +67,14 @@ async def 라멘(ctx, *, name):
     for shops in ramen_data.values():
         for shop in shops:
             if shop["name"] == name:
-                msg = f"""```yaml
-                    🍜{shop['name']}
-                    영업시간: {shop['Hours']}
-                    브레이크타임: {shop['Breaktime']}
-                    라스트오더: {shop['L.O']}
-                    캐치테이블: {shop['Catchtable']}
-                    인스타그램: {shop['Instagram']}```"""
-                      # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
+                msg = (
+                    f"🍜{shop['name']}\n"
+                    f"영업시간: {shop['Hours']}\n"
+                    f"브레이크타임: {shop['Breaktime']}\n"
+                    f"라스트오더: {shop['L.O']}\n"
+                    f"캐치테이블: {shop['Catchtable']}\n"
+                    f"인스타그램: {shop['Instagram']}\n"
+                )       # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
                 await ctx.send(msg)     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
                 return
     await ctx.send("해당 라멘집이 없습니다. 추후 업데이트 될 예정입니다.")
