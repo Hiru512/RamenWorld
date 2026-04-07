@@ -20,19 +20,22 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 #command_prefix="!" -> !hello 이런 식으로 명령어 시작
 #intents -> 아까 설정한 권한 적용
 
+'''button class'''
 class RamenView(discord.ui.View):
     def __init__(self, shop):
         super().__init__()
         self.shop = shop
 
+    '''네이버 지도'''
     @discord.ui.button(label="📍 네이버맵", style=discord.ButtonStyle.primary)
     async def naver_map(self, interaction, button):
         query = urllib.parse.quote(self.shop['name'])
         await interaction.response.send_message(
             f"https://map.naver.com/p/search/{query}",
             ephemeral=True
-        ) #네이버 지도
+        )
 
+    '''카카오 지도'''
     @discord.ui.button(label="📍 카카오맵", style=discord.ButtonStyle.primary)
     async def kakao_map(self, interaction, button):
         query = urllib.parse.quote(self.shop['name'])
@@ -40,15 +43,26 @@ class RamenView(discord.ui.View):
             f"https://map.kakao.com/?q={query}",
             ephemeral=True
         )
-    
 
+    '''메뉴 리스트'''
     @discord.ui.button(label="📖 메뉴", style=discord.ButtonStyle.secondary)
     async def menu(self, interaction: discord.Interaction, button: discord.ui.Button):
-        await interaction.response.send_message(
-            "메뉴 정보는 추후 업데이트 될 예정입니다.",
-            ephemeral=True
-        )
+        
+        menu_list = self.shop.get("menu", [])
 
+        if not menu_list:
+            await interaction.response.send_message(
+                "메뉴 정보가 없습니다.",
+                ephemeral=False
+            )
+            return
+    
+        msg = f"🍜 {self.shop['name']} 메뉴\n\n"
+
+        for item in menu_list:
+            msg += f"- {item['name']}: {item['price']}\n"
+
+        await interaction.response.send_message(msg, ephemeral=False)
 
 '''on_ready(이벤트)
         *구조*
@@ -103,7 +117,6 @@ async def 라멘(ctx, *, name):
 브레이크타임: {shop['Breaktime']}
 라스트오더: {shop['L.O']}
 캐치테이블: {shop['Catchtable']}
-인스타그램: {shop['Instagram']}
 ```"""
                        # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
                 await ctx.send(msg, view=RamenView(shop))     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
@@ -111,7 +124,7 @@ async def 라멘(ctx, *, name):
             
     await ctx.send("해당 라멘집이 없습니다. 추후 업데이트 될 예정입니다.")
 
-
+'''웅성 소환 명령어'''
 @bot.command()
 async def woongseong(ctx):
     await ctx.send("웅성!")

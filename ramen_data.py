@@ -9,15 +9,26 @@ ramen_data = {
             "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:20, 18:30",
             "Catchtable": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
-            "Instagram": "https://www.instagram.com/ramenbarshikou/"
+
+            "menu": [
+                {"name": "쇼유라멘", "price": "12,500원"},
+                {"name": "시오라멘", "price": "12,500원"},
+                {"name": "산초소바", "price": "12,500원"}
+            ]
         },
         {
             "name": "요아케",
             "Hours": "11:30 ~ 21:00(매주 월요일, 화요일 휴무)",
             "Breaktime": "15:00 ~ 17:30",
             "L.O": "20:30",
-            "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/yoake.kr/"
+            "Catchtable": "10:00~, 16:00~",
+
+            "menu": [
+                {"name": "아지타마 쇼유라멘", "price": "14,000원"},
+                {"name": "아지타마 시오라멘", "price": "14,000원"},
+                {"name": "쇼유라멘", "price": "12,000원"},
+                {"name": "시오라멘", "price": "12,000원"}
+            ]
         },
         {
             "name": "소바하우스멘야준",
@@ -25,7 +36,17 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00(주말 없음)",
             "L.O": "없음",
             "Catchtable": "원격 대기: 11:00~",
-            "Instagram": "https://www.instagram.com/sobahousemenyajoon/"
+
+            "menu": [
+                {"name": "특선쇼유라멘", "price": "15,500원"},
+                {"name": "특선시로쇼유라멘", "price": "15,800원"},
+                {"name": "차슈쇼유라멘", "price": "12,500원"},
+                {"name": "차슈시로쇼유라멘", "price": "12,500원"},
+                {"name": "완탕쇼유라멘", "price": "12,500원"},
+                {"name": "완탕시로쇼유라멘", "price": "12,500원"},
+                {"name": "쇼유라멘", "price": "10,000원"},
+                {"name": "시로쇼유라멘", "price": "10,000원"}
+            ]
         },
         {
             "name": "멘큐단",
@@ -33,7 +54,14 @@ ramen_data = {
             "Breaktime": "정보없음",
             "L.O": "19:30",
             "Catchtable": "점심 현장 대기: 09:30~, 점심 온라인 대기: 11:30~",
-            "Instagram": "https://www.instagram.com/menqdan"
+
+            "menu": [
+                {"name": "시오라멘", "price": "10,000원"},
+                {"name": "쇼유라멘", "price": "10,000원"},
+                {"name": "곤부스이 츠케멘(시오)", "price": "12,000원"},
+                {"name": "곤부스이 츠케멘(쇼유)", "price": "12,000원"},
+                {"name": "미소차슈동", "price": "3,500원"}
+            ]
         }
     ],
     "시오": [
@@ -43,7 +71,12 @@ ramen_data = {
             "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:20, 18:30",
             "Catchtable": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
-            "Instagram": "https://www.instagram.com/ramenbarshikou/"
+
+            "menu": [
+                {"name": "쇼유라멘", "price": "12,500원"},
+                {"name": "시오라멘", "price": "12,500원"},
+                {"name": "산초소바", "price": "12,500원"}
+            ]
         },
         {
             "name": "요아케",
@@ -51,7 +84,13 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:30",
             "L.O": "20:30",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/yoake.kr/"
+
+            "menu": [
+                {"name": "아지타마 쇼유라멘", "price": "14,000원"},
+                {"name": "아지타마 시오라멘", "price": "14,000원"},
+                {"name": "쇼유라멘", "price": "12,000원"},
+                {"name": "시오라멘", "price": "12,000원"}
+            ]
         },
         {
             "name": "희옥",
@@ -59,7 +98,19 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 19:30(토요일: 14:30)",
             "Catchtable": "점심: 09:00~(현장 대기), 09:30~(원격 대기), 저녁: 16:00~(현장 대기), 16:30~(원격 대기)",
-            "Instagram": "https://www.instagram.com/heeok_official/"
+
+            "menu": [
+                {"name": "시오라멘", "price": "10,000원"},
+                {"name": "특선시오라멘", "price": "13,500원"},
+                {"name": "블랙쇼유라멘", "price": "10,000원"},
+                {"name": "특선블랙쇼유라멘", "price": "13,500원"},
+                {"name": "차슈추가(앞다리살)", "price": "2,000원"},
+                {"name": "닭목살(2조각)", "price": "1,500원"},
+                {"name": "멘마", "price": "1,500원"},
+                {"name": "밥(한공기)", "price": "1,000원"},
+                {"name": "밥(반공기)", "price": "500원"},
+                {"name": "고기밥(반공기)", "price": "2,500원"}
+            ]
         },
         {
             "name": "롱시즌",
@@ -67,7 +118,21 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 19:30",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/ramenlongseason/"
+
+            "menu": [
+                {"name": "시오라멘", "price": "9,000원"},
+                {"name": "계란 시오라멘", "price": "10,000원"},
+                {"name": "차슈 시오라멘", "price": "12,000원"},
+                {"name": "특제 시오라멘", "price": "13,000원"},
+                {"name": "이리코 시오라멘", "price": "10,000원"},
+                {"name": "계란 이리코 시오라멘", "price": "11,000원"},
+                {"name": "차슈 이리코 시오라멘", "price": "13,000원"},
+                {"name": "특제 이리코 시오라멘", "price": "14,000원"},
+                {"name": "곤부스이 츠케멘", "price": "11,000원"},
+                {"name": "계란 곤부스이 츠케멘", "price": "12,000원"},
+                {"name": "차슈 곤부스이 츠케멘", "price": "14,000원"},
+                {"name": "특제 곤부스이 츠케멘", "price": "15,000원"}
+            ]
         },
         {
             "name": "킨카",
@@ -75,7 +140,15 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:30",
             "L.O": "14:30, 15:30",
             "Catchtable": "점심: 10:00~(현장 대기), 11:10~(원격 대기, 토요일은 11:40~ 원격 대기), 저녁: 17:00~(현장 대기), 17:40~(원격 대기)",
-            "Instagram": "https://www.instagram.com/kinka.ramen_official/"
+
+            "menu": [
+                {"name": "쇼유라멘", "price": "11,000원"},
+                {"name": "시오라멘", "price": "11,000원"},
+                {"name": "머쉬룸 시오라멘", "price": "13,000원"},
+                {"name": "쇼유 파이탄", "price": "12,000원"},
+                {"name": "니보시 파이탄", "price": "13,000원"},
+                {"name": "아부라소바", "price": "12,000원"}
+            ]
         },
         {
             "name": "멘야준",
@@ -83,7 +156,19 @@ ramen_data = {
             "Breaktime": "없음",
             "L.O": "20:00",
             "Catchtable": "원격 대기: 11:00~",
-            "Instagram": "https://www.instagram.com/menyajoon/"
+
+            "menu": [
+                {"name": "시오라멘", "price": "11,000원"},
+                {"name": "시오라멘+1(차슈추가)", "price": "12,000원"},
+                {"name": "특선시오라멘(차슈, 완자추가)", "price": "14,000원"},
+                {"name": "고기밥", "price": "원"},
+                {"name": "쇼유라멘", "price": "11,000원"},
+                {"name": "쇼유라멘+1(차슈추가)", "price": "12,000원"},
+                {"name": "특선쇼유라멘(차슈, 완자추가)", "price": "14,000원"},
+                {"name": "블랙쇼유라멘", "price": "11,000원"},
+                {"name": "블랙쇼유라멘+1(차슈추가)", "price": "12,000원"},
+                {"name": "특선블랙쇼유라멘(차슈, 완자추가)", "price": "14,000원"}
+            ]
         },
         {
             "name": "반라이",
@@ -91,7 +176,18 @@ ramen_data = {
             "Breaktime": "없음",
             "L.O": "20:00",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/ramen_banrai/"
+
+            "menu": [
+                {"name": "돈코츠라멘", "price": "10,000원"},
+                {"name": "카라돈코츠라멘", "price": "10,500원"},
+                {"name": "돈청탕 쇼유라멘", "price": "9,000원"},
+                {"name": "돈청탕 시오라멘", "price": "9,000원"},
+                {"name": "시루나시 탄탄멘", "price": "9,000원"},
+                {"name": "아부라소바", "price": "10,000원"},
+                {"name": "츠케멘 M(200g)", "price": "10,000원"},
+                {"name": "츠케멘 L(300g)", "price": "11,000원"},
+                {"name": "미니차슈동", "price": "3,000원"}
+            ]
         }
     ],
     "돈코츠": [
@@ -101,7 +197,13 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "20:30",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/matsugu24/"
+
+            "menu": [
+                {"name": "돈코츠라멘", "price": "10,000원"},
+                {"name": "카라돈코츠라멘", "price": "10,500원"},
+                {"name": "카라아게", "price": "4,000원"},
+                {"name": "깨오이", "price": "3,000원"}
+            ]
         },
         {
             "name": "쿄",
@@ -109,7 +211,13 @@ ramen_data = {
             "Breaktime": "14:50 ~ 17:00",
             "L.O": "재료 소진 시 조기마감",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/kyoramen/"
+
+            "menu": [
+                {"name": "아부라소바", "price": "8,000원"},
+                {"name": "츠케멘", "price": "10,000원"},
+                {"name": "쿄라멘(돈코츠라멘)", "price": "8,000원"},
+                {"name": "카라돈코츠라멘", "price": "8,500원"}
+            ]
         },
         {
             "name": "반라이",
@@ -117,7 +225,18 @@ ramen_data = {
             "Breaktime": "없음",
             "L.O": "20:00",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/ramen_banrai/"
+
+            "menu": [
+                {"name": "돈코츠라멘", "price": "10,000원"},
+                {"name": "카라돈코츠라멘", "price": "10,500원"},
+                {"name": "돈청탕 쇼유라멘", "price": "9,000원"},
+                {"name": "돈청탕 시오라멘", "price": "9,000원"},
+                {"name": "시루나시 탄탄멘", "price": "9,000원"},
+                {"name": "아부라소바", "price": "10,000원"},
+                {"name": "츠케멘 M(200g)", "price": "10,000원"},
+                {"name": "츠케멘 L(300g)", "price": "11,000원"},
+                {"name": "미니차슈동", "price": "3,000원"}
+            ]
         },
         {
             "name": "보루도",
@@ -125,7 +244,18 @@ ramen_data = {
             "Breaktime": "16:00~17:30(월~목)",
             "L.O": "20:00",
             "Catchtable": "11:30~",
-            "Instagram": "https://www.instagram.com/ramen_borudo/"
+
+            "menu": [
+                {"name": "보루도 돈코츠라멘(풀토핑)", "price": "13,000원"},
+                {"name": "돈코츠라멘", "price": "11,000원"},
+                {"name": "보루도 카라이라멘(풀토핑)", "price": "13,000원"},
+                {"name": "카라이라멘", "price": "11,000원"},
+                {"name": "아부라소바", "price": "12,000원"},
+                {"name": "키미카레 마제소바", "price": "12,000원"},
+                {"name": "니보시 아부라소바", "price": "12,000원"},
+                {"name": "미니차슈덮밥", "price": "4,500원"},
+                {"name": "날개교자", "price": "4,000원"}
+            ]
         }
     ],
     "지로": [
@@ -135,7 +265,19 @@ ramen_data = {
             "Breaktime": "14:00 ~ 17:30",
             "L.O": "14:00, 21:30",
             "Catchtable": "11:00~(평일), 10:00~(주말)",
-            "Instagram": "https://www.instagram.com/ryujin_ramen_seoul/"
+
+            "menu": [
+                {"name": "라멘(소)", "price": "13,000원"},
+                {"name": "라멘(대)", "price": "14,000원"},
+                {"name": "시루나시(소)", "price": "13,000원"},
+                {"name": "시루나시(대)", "price": "14,000원"},
+                {"name": "라멘(소)+매운토핑(화&토)", "price": "14,500원"},
+                {"name": "라멘(대)+매운토핑(화&토)", "price": "15,500원"},
+                {"name": "시루나시(소)+매운토핑(화&토)", "price": "14,500원"},
+                {"name": "시루나시(대)+매운토핑(화&토)", "price": "15,500원"},
+                {"name": "시루나시(소)+카레토핑(목&일)", "price": "14,500원"},
+                {"name": "시루나시(대)+카레토핑(목&일)", "price": "15,500원"}
+            ]
         },
         {
             "name": "566",
@@ -143,7 +285,13 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:50, 20:00",
             "Catchtable": "11:00~, 16:00~",
-            "Instagram": "https://www.instagram.com/566ramen/"
+
+            "menu": [
+                {"name": "대라멘", "price": "12,000원"},
+                {"name": "소라멘", "price": "11,000원"},
+                {"name": "대 시루나시지로", "price": "12,000원"},
+                {"name": "소 시루나시지로", "price": "11,000원"}
+            ]
         },
         {
             "name": "오레노이키루미치",
@@ -151,7 +299,16 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "21:40",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/orenoikirumichi_kr/"
+
+            "menu": [
+                {"name": "라멘", "price": "11,000원"},
+                {"name": "갈릭 토마토 시루나시", "price": "12,000원"},
+                {"name": "TKM", "price": "10,000원"},
+                {"name": "아부라소바", "price": "10,000원"},
+                {"name": "미소라멘", "price": "12,000원"},
+                {"name": "카라미소라멘", "price": "13,000원"},
+                {"name": "시루나시", "price": "11,000원"},
+            ]
         }
     ],
     "미소": [
@@ -161,15 +318,15 @@ ramen_data = {
             "Breaktime": "16:00-17:00(토요일, 공휴일 없음)",
             "L.O": "20:30",
             "Catchtable": "11:30~",
-            "Instagram": "https://www.instagram.com/akiya.ramen/"
-        },
-        {
-            "name": "부타노맥스",
-            "Hours": "11:00 ~ 00:30(매주 토요일, 일요일 휴무)",
-            "Breaktime": "14:00 ~ 17:30",
-            "L.O": "00:00",
-            "Catchtable": "현장 웨이팅",
-            "Instagram": "https://www.instagram.com/butanomax/"
+
+            "menu": [
+                {"name": "미소라멘", "price": "13,000원"},
+                {"name": "아키야라멘", "price": "10,000원"},
+                {"name": "카라아키야라멘", "price": "11,000원"},
+                {"name": "쿠로라멘", "price": "11,000원"},
+                {"name": "차슈덮밥", "price": "11,000원"},
+                {"name": "마제소바", "price": "10,000원"}
+            ]
         },
         {
             "name": "멘타미",
@@ -177,7 +334,20 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 20:00",
             "Catchtable": "현장 웨이팅",
-            "Instagram": "https://www.instagram.com/mentami_official/"
+
+            "menu": [
+                {"name": "미소라멘", "price": "11,000원"},
+                {"name": "카라미소라멘", "price": "11,500원"},
+                {"name": "특선 미소라멘", "price": "14,000원"},
+                {"name": "특선 카라미소라멘", "price": "14,500원"},
+                {"name": "미소 아부라소바(서비스 밥 제공)", "price": "13,000원"},
+                {"name": "카라미소 아부라소바(서비스 밥 제공)", "price": "13,500원"},
+                {"name": "미니차슈동", "price": "5,000원"},
+                {"name": "공기밥", "price": "1,000원"},
+                {"name": "키린병맥주", "price": "7,000원"},
+                {"name": "레드락생맥주", "price": "6,000원"},
+                {"name": "한입맥주(200ml)", "price": "3,000원"}
+            ]
         }
     ],
     "츠케멘": [
@@ -187,7 +357,13 @@ ramen_data = {
             "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:30, 19:30",
             "Catchtable": "11:30~, 17:00~",
-            "Instagram": "https://www.instagram.com/hissatsuwaza_/"
+
+            "menu": [
+                {"name": "츠케멘", "price": "12,000원"},
+                {"name": "차슈멘", "price": "15,500원"},
+                {"name": "매운 츠케멘", "price": "13,000원"},
+                {"name": "매운 차슈멘", "price": "16,500원"}
+            ]
         },
         {
             "name": "쿄",
@@ -195,7 +371,13 @@ ramen_data = {
             "Breaktime": "14:50 ~ 17:00",
             "L.O": "재료 소진 시 조기마감",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/kyoramen/"
+
+            "menu": [
+                {"name": "아부라소바", "price": "8,000원"},
+                {"name": "츠케멘", "price": "10,000원"},
+                {"name": "쿄라멘(돈코츠라멘)", "price": "8,000원"},
+                {"name": "카라돈코츠라멘", "price": "8,500원"}
+            ]
         },
         {
             "name": "진세이",
@@ -203,7 +385,12 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00(일요일은 없음)",
             "L.O": "14:30, 20:00",
             "Catchtable": "11:30~, 17:00~",
-            "Instagram": "https://www.instagram.com/jinseiramen_yeonnam/"
+
+            "menu": [
+                {"name": "니보시 돈코츠", "price": "11,000원"},
+                {"name": "츠케멘", "price": "12,000원"},
+                {"name": "아부라소바", "price": "11,000원"}
+            ]
         },
         {
             "name": "반라이",
@@ -211,15 +398,25 @@ ramen_data = {
             "Breaktime": "없음",
             "L.O": "20:00",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/ramen_banrai/"
+
+            "menu": [
+                {"name": "돈코츠라멘", "price": "10,000원"},
+                {"name": "카라돈코츠라멘", "price": "10,500원"},
+                {"name": "돈청탕 쇼유라멘", "price": "9,000원"},
+                {"name": "돈청탕 시오라멘", "price": "9,000원"},
+                {"name": "시루나시 탄탄멘", "price": "9,000원"},
+                {"name": "아부라소바", "price": "10,000원"},
+                {"name": "츠케멘 M(200g)", "price": "10,000원"},
+                {"name": "츠케멘 L(300g)", "price": "11,000원"},
+                {"name": "미니차슈동", "price": "3,000원"}
+            ]
         },
         ###{
             ###"Name": "멘타카무쇼",
             ###"Hours": "",
             ###"Breaktime": "",
             ###"L.O": "",
-            ###"Catchtable": "",
-            ###"Instagram": ""
+            ###"Catchtable": ""
         ###},
         {
             "name": "멘도무카우",
@@ -227,7 +424,13 @@ ramen_data = {
             "Breaktime": "없음",
             "L.O": "16:30",
             "Catchtable": "없음",
-            "Instagram": "https://www.instagram.com/mendo_mukau/"
+
+            "menu": [
+                {"name": "츠케멘(매일50~60식)", "price": "12,000원"},
+                {"name": "시오라멘", "price": "10,000원"},
+                {"name": "쇼유라멘", "price": "10,500원"},
+                {"name": "카라시오라멘(매운멸치시오)", "price": "10,500원"}
+            ]
         }
     ],
     "이에케": [
@@ -237,8 +440,32 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:50, 20:30",
             "Catchtable": "11:30~",
-            "Instagram": "https://www.instagram.com/hakuten92"
-        }
+
+            "menu": [
+                {"name": "이에케라멘", "price": "11,000원"},
+                {"name": "매운 이에케라멘", "price": "11,500원"},
+                {"name": "생맥주 레드락(500ml)", "price": "5,000원"},
+                {"name": "사이다, 콜라", "price": "2,500원"}
+            ]
+        },
+        {
+            "name": "부타노맥스",
+            "Hours": "11:00 ~ 00:30(매주 토요일, 일요일 휴무)",
+            "Breaktime": "14:00 ~ 17:30",
+            "L.O": "00:00",
+            "Catchtable": "현장 웨이팅",
+
+            "menu": [
+                {"name": "이에케라멘", "price": "11,000원"},
+                {"name": "타이완 매콤마제소바", "price": "10,000원"},
+                {"name": "차슈-멘", "price": "13,000원"},
+                {"name": "마부시동", "price": "1,500원"},
+                {"name": "아부라소바", "price": "9,500원"},
+                {"name": "시오청탕", "price": "9,000원"},
+                {"name": "중화소바", "price": "9,000원"},
+                {"name": "눈꽃교자(5p)", "price": "4,000원"}
+            ]
+        },
     ],
     "카키": [
         {
@@ -247,7 +474,16 @@ ramen_data = {
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 20:30",
             "Catchtable": "11:00~",
-            "Instagram": "https://www.instagram.com/kakikojo_official/"
+
+            "menu": [
+                {"name": "카키라멘", "price": "13,000원"},
+                {"name": "카키 시오라멘", "price": "12,000원"},
+                {"name": "츄카 소바", "price": "12,000원"},
+                {"name": "치킨 가라아게", "price": "6,000원"},
+                {"name": "카이라이스(굴 공기밥)", "price": "3,000원"},
+                {"name": "치즈라이스(치즈 공기밥)", "price": "2,000원"},
+                {"name": "라이스(공기밥)", "price": "1,000원"},
+            ]
         }
     ]
 }
