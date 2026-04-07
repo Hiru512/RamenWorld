@@ -19,6 +19,25 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 #command_prefix="!" -> !hello 이런 식으로 명령어 시작
 #intents -> 아까 설정한 권한 적용
 
+class RamenView(discord.ui.View):
+    def __init__(self, shop):
+        super().__init__()
+        self.shop = shop
+
+    @discord.ui.button(label="📍 위치", style=discord.ButtonStyle.primary)
+    async def location(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.send_message(
+            f"지도: https//map.naver.com/v5/search/{self.shop['name']}",
+            ephemeral=True
+        )
+
+    @discord.ui.button(label="📖 메뉴", style=discord.ButtonStyle.secondary)
+    async def menu(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.send_message(
+            "메뉴 정보는 추후 업데이트 될 예정입니다.",
+            ephemeral=True
+        )
+
 
 '''on_ready(이벤트)
         *구조*
@@ -67,16 +86,18 @@ async def 라멘(ctx, *, name):
     for shops in ramen_data.values():
         for shop in shops:
             if shop["name"] == name:
-                msg = (
-                    f"🍜{shop['name']}\n"
-                    f"영업시간: {shop['Hours']}\n"
-                    f"브레이크타임: {shop['Breaktime']}\n"
-                    f"라스트오더: {shop['L.O']}\n"
-                    f"캐치테이블: {shop['Catchtable']}\n"
-                    f"인스타그램: {shop['Instagram']}\n"
-                )       # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
-                await ctx.send(msg)     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
+                msg = f"""```yaml
+"🍜{shop['name']}
+"영업시간: {shop['Hours']}
+"브레이크타임: {shop['Breaktime']}
+"라스트오더: {shop['L.O']}
+"캐치테이블: {shop['Catchtable']}
+"인스타그램: {shop['Instagram']}
+```"""
+                       # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
+                await ctx.send(msg, view=RamenView(shop))     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
                 return
+            
     await ctx.send("해당 라멘집이 없습니다. 추후 업데이트 될 예정입니다.")
 
 
