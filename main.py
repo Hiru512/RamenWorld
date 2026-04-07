@@ -74,7 +74,7 @@ async def 라멘(ctx, *, name):
                     라스트오더: {shop['L.O']}
                     캐치테이블: {shop['Catchtable']}
                     인스타그램: {shop['Instagram']}
-                    '''"""
+                '''"""
                       # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
                 await ctx.send(msg)     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
                 return
