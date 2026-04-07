@@ -67,7 +67,7 @@ async def 라멘(ctx, *, name):
     for shops in ramen_data.values():
         for shop in shops:
             if shop["name"] == name:
-                msg = f"""'''yam1
+                msg = f"""'''yaml
                     🍜{shop['name']}
                     영업시간: {shop['Hours']}
                     브레이크타임: {shop['Breaktime']}
