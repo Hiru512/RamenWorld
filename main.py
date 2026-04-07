@@ -25,12 +25,22 @@ class RamenView(discord.ui.View):
         super().__init__()
         self.shop = shop
 
-    @discord.ui.button(label="📍 위치", style=discord.ButtonStyle.primary)
-    async def location(self, interaction: discord.Interaction, button: discord.ui.Button):
+    @discord.ui.button(label="📍 네이버맵", style=discord.ButtonStyle.primary)
+    async def naver_map(self, interaction, button):
         query = urllib.parse.quote(self.shop['name'])
-        url = f"https://map.naver.com/p/search/{query}"
-        
-        await interaction.response.send_message(url, ephemeral=True)
+        await interaction.response.send_message(
+            f"https://map.naver.com/p/search/{query}",
+            ephemeral=True
+        ) #네이버 지도
+
+    @discord.ui.button(label="📍 카카오맵", style=discord.ButtonStyle.primary)
+    async def kakao_map(self, interaction, button):
+        query = urllib.parse.quote(self.shop['name'])
+        await interaction.response.send_message(
+            f"https://map.kakao.com/p/?q={query}",
+            ephemeral=True
+        )
+    
 
     @discord.ui.button(label="📖 메뉴", style=discord.ButtonStyle.secondary)
     async def menu(self, interaction: discord.Interaction, button: discord.ui.Button):
