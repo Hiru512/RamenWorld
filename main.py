@@ -1,13 +1,9 @@
-'''봇 로직'''
-
-from ramen_data import ramen_data
-
-
 '''라이브러리 import
         *의미*'''
 import os
 import discord #discord -> 디스코드 API 연결용
 from discord.ext import commands #commands -> 명령어 시스템(!hello) 쉽게 만들기
+from ramen_data import ramen_data
 
 
 '''intents (핵심개념)
@@ -58,8 +54,7 @@ def create_ramen_command(ramen_type):
             await ctx.send(f"🍜 {ramen_type} 라멘 리스트: \n{msg}")
         else:
             await ctx.send(f"🍜 {ramen_type} 라멘집 정보가 없습니다.")
-
-        return command
+    return command
     
 for ramen_type in ramen_data.keys():
     bot.command(name=f"{ramen_type}라멘")(create_ramen_command(ramen_type))
@@ -82,7 +77,7 @@ async def 라멘(ctx, *, name):
                 )      # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
                 await ctx.send(msg)     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
                 return
-        await ctx.send("해당 라멘집이 없습니다. 추후에 업데이트 될 예정입니다.")
+    await ctx.send("해당 라멘집이 없습니다. 추후에 업데이트 될 예정입니다.")
 
 
 @bot.command()
