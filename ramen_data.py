@@ -229,5 +229,25 @@ ramen_data = {
             "Catchtable": "없음",
             "Instagram": "https://www.instagram.com/mendo_mukau/"
         }
+    ],
+    "이에케": [
+        {
+            "name": "하쿠텐",
+            "Hours": "11:30 ~ 20:30",
+            "Breaktime": "15:00 ~ 17:00",
+            "L.O": "14:50, 20:30",
+            "Catchtable": "11:30~",
+            "Instagram": "https://www.instagram.com/hakuten92"
+        }
+    ],
+    "카키": [
+        {
+            "name": "카키코우죠",
+            "Hours": "11:00 ~ 21:00(당분간 주말 임시휴무)",
+            "Breaktime": "15:00 ~ 17:00",
+            "L.O": "14:30, 20:30",
+            "Catchtable": "11:00~",
+            "Instagram": "https://www.instagram.com/kakikojo_official/"
+        }
     ]
 }
