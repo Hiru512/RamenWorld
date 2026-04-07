@@ -37,7 +37,7 @@ class RamenView(discord.ui.View):
     async def kakao_map(self, interaction, button):
         query = urllib.parse.quote(self.shop['name'])
         await interaction.response.send_message(
-            f"https://map.kakao.com/p/?q={query}",
+            f"https://map.kakao.com/?q={query}",
             ephemeral=True
         )
     
