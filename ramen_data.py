@@ -6,7 +6,7 @@ ramen_data = {
         {
             "name": "라멘바시코우",
             "Hours": "12:00 ~ 18:40(60그릇 소진시 마감)",
-            "breaktime": "14:30 ~ 17:00",
+            "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:20, 18:30",
             "Catchtable": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
             "Instagram": "https://www.instagram.com/ramenbarshikou/"
@@ -40,7 +40,7 @@ ramen_data = {
         {
             "name": "라멘바시코우",
             "Hours": "12:00 ~ 18:40(60그릇 소진시 마감)",
-            "breaktime": "14:30 ~ 17:00",
+            "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:20, 18:30",
             "Catchtable": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
             "Instagram": "https://www.instagram.com/ramenbarshikou/"
