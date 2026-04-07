@@ -77,7 +77,7 @@ async def 라멘(ctx, *, name):
                 )      # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
                 await ctx.send(msg)     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
                 return
-    await ctx.send("해당 라멘집이 없습니다. 추후에 업데이트 될 예정입니다.")
+    await ctx.send("해당 라멘집이 없습니다. 추후 업데이트 될 예정입니다.")
 
 
 @bot.command()
