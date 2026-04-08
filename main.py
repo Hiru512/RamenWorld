@@ -31,27 +31,17 @@ class RamenView(discord.ui.View):
     @discord.ui.button(label="📍 네이버지도", style=discord.ButtonStyle.primary)
     async def naver_map(self, interaction: discord.Interaction, button: discord.ui.Button):
         query = urllib.parse.quote(self.shop['name'])
-
-        app_url = f"nmap://search?query={query}"     # 앱
         web_url = f"https://map.naver.com/p/search/{query}"     # 웹 fallback
 
-        await interaction.response.send_message(
-            f"📍 네이버 앱\n👉 {app_url}\n👉 (안되면) {web_url}",
-            ephemeral=True
-        )
+        await interaction.response.send_message(web_url, ephemeral=True)
 
     '''카카오 지도'''
     @discord.ui.button(label="📍 카카오지도", style=discord.ButtonStyle.primary)
     async def kakao_map(self, interaction: discord.Interaction, button: discord.ui.Button):
         query = urllib.parse.quote(self.shop['name'])
-
-        app_url = f"kakaomap://search?q={query}"    # 앱
         web_url = f"https://map.kakao.com/?q={query}"   # 웹 fallback
 
-        await interaction.response.send_message(
-            f"📍 카카오맵\n 👉 {app_url}\n 👉 (안되면) {web_url}",
-            ephemeral=True
-        )
+        await interaction.response.send_message(web_url, ephemeral=True)
 
     '''메뉴 리스트'''
     @discord.ui.button(label="📖 메뉴", style=discord.ButtonStyle.secondary)
