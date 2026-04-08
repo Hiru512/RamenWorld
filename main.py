@@ -3,6 +3,7 @@
 import os
 import discord #discord -> 디스코드 API 연결용
 import urllib.parse     #location
+import random       #random으로 라멘 선택해주는 함수
 from discord.ext import commands #commands -> 명령어 시스템(!hello) 쉽게 만들기
 from ramen_data import ramen_data
 
@@ -128,6 +129,17 @@ async def 라멘(ctx, *, name):
 @bot.command()
 async def woongseong(ctx):
     await ctx.send("웅성!")
+
+@bot.command()
+async def 선택(ctx, *, raw_options):
+    options = [opt.strip() for opt in raw_options.split(",") if opt.strip()]
+
+    if len(options) < 2:
+        await ctx.send("두 개 이상 입력해주세요.\ln예시: 류진, 하쿠텐")
+        return
+    
+    choice = random.choice(options)
+    await ctx.send(f"하하하하 오늘은 **{choice}** 어떠신지요. 🍜")
 
     
     ###print(message.content)      #터미널에서 메시지 출력
