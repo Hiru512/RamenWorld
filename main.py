@@ -135,7 +135,7 @@ async def 선택(ctx, *, raw_options):
     options = [opt.strip() for opt in raw_options.split(",") if opt.strip()]
 
     if len(options) < 2:
-        await ctx.send("두 개 이상 입력해주세요.\ln예시: 류진, 하쿠텐")
+        await ctx.send("두 개 이상 입력해주세요.\n예시: 류진, 하쿠텐")
         return
     
     choice = random.choice(options)
