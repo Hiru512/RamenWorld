@@ -32,7 +32,7 @@ class RamenView(discord.ui.View):
     async def naver_map(self, interaction: discord.Interaction, button: discord.ui.Button):
         query = urllib.parse.quote(self.shop['name'])
 
-        app_url = f"map://search?query={query}"     # 앱
+        app_url = f"nmap://search?query={query}"     # 앱
         web_url = f"https://map.naver.com/p/search/{query}"     # 웹 fallback
 
         await interaction.response.send_message(
