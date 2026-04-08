@@ -147,5 +147,5 @@ async def 선택(ctx, *, raw_options):
 
 #역할 1: 모든 메시지 들어올 때마다 실행됨
 
-
+print("토큰:", os.getenv("DISCORD_TOKEN"))
 bot.run(os.getenv("DISCORD_TOKEN"))
