@@ -29,7 +29,7 @@ class RamenView(discord.ui.View):
 
     '''네이버 지도'''
     @discord.ui.button(label="📍 네이버지도", style=discord.ButtonStyle.primary)
-    async def naver_map(self, interaction: discord.Interaction, button: discord.ui.Button):
+    async def naver_map(self, interaction, button):
         query = urllib.parse.quote(self.shop['name'])
         web_url = f"https://map.naver.com/p/search/{query}"     # 웹 fallback
 
@@ -37,7 +37,7 @@ class RamenView(discord.ui.View):
 
     '''카카오 지도'''
     @discord.ui.button(label="📍 카카오지도", style=discord.ButtonStyle.primary)
-    async def kakao_map(self, interaction: discord.Interaction, button: discord.ui.Button):
+    async def kakao_map(self, interaction, button):
         query = urllib.parse.quote(self.shop['name'])
         web_url = f"https://map.kakao.com/?q={query}"   # 웹 fallback
 
@@ -45,7 +45,7 @@ class RamenView(discord.ui.View):
 
     '''메뉴 리스트'''
     @discord.ui.button(label="📖 메뉴", style=discord.ButtonStyle.secondary)
-    async def menu(self, interaction: discord.Interaction, button: discord.ui.Button):
+    async def menu(self, interaction, button: discord.ui.Button):
         
         menu_list = self.shop.get("menu", [])
 
