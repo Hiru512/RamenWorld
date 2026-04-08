@@ -138,8 +138,8 @@ async def 선택(ctx, *, raw_options):
         await ctx.send("두 개 이상 입력해주세요.\n예시: 류진, 하쿠텐")
         return
     
-    choice = random.choice(options)
-    await ctx.send(f"하하하하 오늘은 **{choice}** 어떠신지요. 🍜")
+    picked = random.choice(options)
+    await ctx.send(f"하하하하 오늘은 **{picked}** 어떠신지요. 🍜")
 
     
     ###print(message.content)      #터미널에서 메시지 출력
