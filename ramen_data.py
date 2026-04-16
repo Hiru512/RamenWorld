@@ -8,7 +8,8 @@ ramen_data = {
             "Hours": "12:00 ~ 18:40(70+@그릇 소진시 마감)",
             "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:20, 18:30",
-            "Catchtable": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
+            "C.T": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/ramenbar_shikou",
 
             "menu": [
                 {"name": "쇼유라멘", "price": "12,500원"},
@@ -22,7 +23,8 @@ ramen_data = {
             "Hours": "11:30 ~ 21:00(매주 월요일, 화요일 휴무)",
             "Breaktime": "15:00 ~ 17:30",
             "L.O": "20:30",
-            "Catchtable": "10:00~, 16:00~",
+            "C.T": "10:00~, 16:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/yoake",
 
             "menu": [
                 {"name": "아지타마 쇼유라멘", "price": "14,000원"},
@@ -37,7 +39,8 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00",
             "Breaktime": "15:00 ~ 17:00(주말 없음)",
             "L.O": "없음",
-            "Catchtable": "원격 대기: 11:00~",
+            "C.T": "원격 대기: 11:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/sobahousemenyajoon",
 
             "menu": [
                 {"name": "특선쇼유라멘", "price": "15,500원"},
@@ -56,7 +59,8 @@ ramen_data = {
             "Hours": "11:30 ~ 20:00(매주 월요일, 화요일 휴무)",
             "Breaktime": "정보없음",
             "L.O": "19:30",
-            "Catchtable": "점심 현장 대기: 09:30~, 점심 온라인 대기: 11:30~",
+            "C.T": "점심 현장 대기: 09:30~, 점심 온라인 대기: 11:30~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/menqdan",
 
             "menu": [
                 {"name": "시오라멘", "price": "10,000원"},
@@ -74,7 +78,8 @@ ramen_data = {
             "Hours": "12:00 ~ 18:40(60그릇 소진시 마감)",
             "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:20, 18:30",
-            "Catchtable": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
+            "C.T": "점심 원격 대기: 11:30, 저녁 원격 대기: 16:30",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/ramenbar_shikou",
 
             "menu": [
                 {"name": "쇼유라멘", "price": "12,500원"},
@@ -88,7 +93,8 @@ ramen_data = {
             "Hours": "11:30 ~ 21:00(매주 월요일, 화요일 휴무)",
             "Breaktime": "15:00 ~ 17:30",
             "L.O": "20:30",
-            "Catchtable": "없음",
+            "C.T": "10:00~, 16:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/yoake",
 
             "menu": [
                 {"name": "아지타마 쇼유라멘", "price": "14,000원"},
@@ -103,7 +109,8 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00(월~금), 11:00 ~ 15:00(토요일),(매주 일요일 휴무)",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 19:30(토요일: 14:30)",
-            "Catchtable": "점심: 09:00~(현장 대기), 09:30~(원격 대기), 저녁: 16:00~(현장 대기), 16:30~(원격 대기)",
+            "C.T": "점심: 09:00~(현장 대기), 09:30~(원격 대기), 저녁: 16:00~(현장 대기), 16:30~(원격 대기)",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/heeok_lamen?type=WAITING&currentSuggestionType=SHOP_NAME",
 
             "menu": [
                 {"name": "시오라멘", "price": "10,000원"},
@@ -124,7 +131,7 @@ ramen_data = {
             "Hours": "11:30 ~ 20:00(매주 월요일, 화요일 휴무)",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 19:30",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "시오라멘", "price": "9,000원"},
@@ -147,7 +154,8 @@ ramen_data = {
             "Hours": "11:00~20:00(평일), 11:30~16:00(토요일), (매주 일요일 휴무)",
             "Breaktime": "15:00 ~ 17:30",
             "L.O": "14:30, 15:30",
-            "Catchtable": "점심: 10:00~(현장 대기), 11:10~(원격 대기, 토요일은 11:40~ 원격 대기), 저녁: 17:00~(현장 대기), 17:40~(원격 대기)",
+            "C.T": "점심: 10:00~(현장 대기), 11:10~(원격 대기, 토요일은 11:40~ 원격 대기), 저녁: 17:00~(현장 대기), 17:40~(원격 대기)",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/kinka",
 
             "menu": [
                 {"name": "쇼유라멘", "price": "11,000원"},
@@ -164,7 +172,8 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00",
             "Breaktime": "없음",
             "L.O": "20:00",
-            "Catchtable": "원격 대기: 11:00~",
+            "C.T": "원격 대기: 11:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/menyajoon_hd",
 
             "menu": [
                 {"name": "시오라멘", "price": "11,000원"},
@@ -185,7 +194,7 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00(매주 화요일 휴무)",
             "Breaktime": "없음",
             "L.O": "20:00",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "돈코츠라멘", "price": "10,000원"},
@@ -207,7 +216,7 @@ ramen_data = {
             "Hours": "11:00 ~ 21:00(매주 월요일 휴무)",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "20:30",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "돈코츠라멘", "price": "10,000원"},
@@ -222,7 +231,7 @@ ramen_data = {
             "Hours": "11:30 ~ 19:30(매주 월요일 휴무)",
             "Breaktime": "14:50 ~ 17:00",
             "L.O": "재료 소진 시 조기마감",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "아부라소바", "price": "8,000원"},
@@ -237,7 +246,7 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00(매주 화요일 휴무)",
             "Breaktime": "없음",
             "L.O": "20:00",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "돈코츠라멘", "price": "10,000원"},
@@ -257,7 +266,8 @@ ramen_data = {
             "Hours": "11:30 ~ 20:30(월~목), 11:30~20:30(금~일)",
             "Breaktime": "16:00~17:30(월~목)",
             "L.O": "20:00",
-            "Catchtable": "11:30~",
+            "C.T": "11:30~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/ramen_bold",
 
             "menu": [
                 {"name": "보루도 돈코츠라멘(풀토핑)", "price": "13,000원"},
@@ -279,7 +289,8 @@ ramen_data = {
             "Hours": "12:00 ~ 21:30(평일), 11:00 ~ 21:30(주말)",
             "Breaktime": "14:00 ~ 17:30",
             "L.O": "14:00, 21:30",
-            "Catchtable": "11:00~(평일), 10:00~(주말)",
+            "C.T": "11:00~(평일), 10:00~(주말)",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/ryujin",
 
             "menu": [
                 {"name": "라멘(소)", "price": "13,000원"},
@@ -300,7 +311,8 @@ ramen_data = {
             "Hours": "11:00 ~ 20:30",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:50, 20:00",
-            "Catchtable": "11:00~, 16:00~",
+            "C.T": "11:00~, 16:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/566ramen",
 
             "menu": [
                 {"name": "대라멘", "price": "12,000원"},
@@ -315,7 +327,7 @@ ramen_data = {
             "Hours": "11:00 ~ 22:00",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "21:40",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "라멘", "price": "11,000원"},
@@ -335,7 +347,8 @@ ramen_data = {
             "Hours": "11:30 - 21:00(매주 일요일 휴무)",
             "Breaktime": "16:00-17:00(토요일, 공휴일 없음)",
             "L.O": "20:30",
-            "Catchtable": "11:30~",
+            "C.T": "11:30~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/akiyaramen",
 
             "menu": [
                 {"name": "미소라멘", "price": "13,000원"},
@@ -352,7 +365,7 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 20:00",
-            "Catchtable": "현장 웨이팅",
+            "C.T": "현장 웨이팅",
 
             "menu": [
                 {"name": "미소라멘", "price": "11,000원"},
@@ -374,7 +387,7 @@ ramen_data = {
             "Hours": "11:00 ~ 00:30(매주 토요일, 일요일 휴무)",
             "Breaktime": "14:00 ~ 17:30",
             "L.O": "00:00",
-            "Catchtable": "현장 웨이팅",
+            "C.T": "현장 웨이팅",
 
             "menu": [
                 {"name": "미소라멘", "price": "11,000원"}
@@ -388,7 +401,8 @@ ramen_data = {
             "Hours": "11:30 ~ 20:00(매주 월요일 휴무)",
             "Breaktime": "14:30 ~ 17:00",
             "L.O": "14:30, 19:30",
-            "Catchtable": "11:30~, 17:00~",
+            "C.T": "11:30~, 17:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/hitsatsuwaza",
 
             "menu": [
                 {"name": "츠케멘", "price": "12,000원"},
@@ -403,7 +417,7 @@ ramen_data = {
             "Hours": "11:30 ~ 19:30(매주 월요일 휴무)",
             "Breaktime": "14:50 ~ 17:00",
             "L.O": "재료 소진 시 조기마감",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "아부라소바", "price": "8,000원"},
@@ -418,7 +432,8 @@ ramen_data = {
             "Hours": "11:30 ~ 20:30(화~토), 11:30 ~ 17:00(일), (매주 월요일 휴무)",
             "Breaktime": "15:00 ~ 17:00(일요일은 없음)",
             "L.O": "14:30, 20:00",
-            "Catchtable": "11:30~, 17:00~",
+            "C.T": "11:30~, 17:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/jinseiramen",
 
             "menu": [
                 {"name": "니보시 돈코츠", "price": "11,000원"},
@@ -432,7 +447,7 @@ ramen_data = {
             "Hours": "11:00 ~ 20:00(매주 화요일 휴무)",
             "Breaktime": "없음",
             "L.O": "20:00",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "돈코츠라멘", "price": "10,000원"},
@@ -459,7 +474,7 @@ ramen_data = {
             "Hours": "11:30 ~ 17:00(매주 수요일 휴무)",
             "Breaktime": "없음",
             "L.O": "16:30",
-            "Catchtable": "없음",
+            "C.T": "없음",
 
             "menu": [
                 {"name": "츠케멘(매일50~60식)", "price": "12,000원"},
@@ -476,7 +491,8 @@ ramen_data = {
             "Hours": "11:30 ~ 20:30",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:50, 20:30",
-            "Catchtable": "11:30~",
+            "C.T": "11:30~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/hakuten",
 
             "menu": [
                 {"name": "이에케라멘", "price": "11,000원"},
@@ -489,11 +505,12 @@ ramen_data = {
     ],
     "카키": [
         {
-            "name": "카키코우조",
+            "name": "카키코우죠",
             "Hours": "11:00 ~ 21:00(당분간 주말 임시휴무)",
             "Breaktime": "15:00 ~ 17:00",
             "L.O": "14:30, 20:30",
-            "Catchtable": "11:00~",
+            "C.T": "11:00~",
+            "Catchtable": "https://app.catchtable.co.kr/ct/shop/kakikoujyo",
 
             "menu": [
                 {"name": "카키라멘", "price": "13,000원"},

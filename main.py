@@ -27,6 +27,9 @@ class RamenView(discord.ui.View):
         super().__init__()
         self.shop = shop
 
+        if not self.shop.get("Catchtable"):
+            self.remove_item(self.reserve) 
+
     '''네이버 지도'''
     @discord.ui.button(label="📍 네이버지도", style=discord.ButtonStyle.primary)
     async def naver_map(self, interaction, button):
@@ -62,6 +65,20 @@ class RamenView(discord.ui.View):
             msg += f"- {item['name']}: {item['price']}\n"
 
         await interaction.response.send_message(msg, ephemeral=False)
+
+    '''캐치테이블 버튼'''
+    @discord.ui.button(label="📅 예약하기", style=discord.ButtonStyle.success)
+    async def reserve(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        url = self.shop.get("Catchtable")
+
+        if not url:
+            await interaction.response.send_message(
+                "예약 된 링크가 없습니다."
+            )
+            return
+        
+        await interaction.response.send_message(url, ephemeral=True)
 
 '''on_ready(이벤트)
         *구조*
@@ -115,7 +132,7 @@ async def 라멘(ctx, *, name):
 영업시간: {shop['Hours']}
 브레이크타임: {shop['Breaktime']}
 라스트오더: {shop['L.O']}
-캐치테이블: {shop['Catchtable']}
+캐치테이블: {shop['C.T']}
 ```"""
                        # ctx (context) -> 누가, 어디서, 어떤 메시지 보냈는지 정보
                 await ctx.send(msg, view=RamenView(shop))     # await ctx.send() -> 디스코드 채팅으로 메시지 보내기
