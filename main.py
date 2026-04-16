@@ -136,7 +136,7 @@ async def 선택(ctx, *, raw_options=None):
 
     for ramen_list in ramen_data.values():
         for shop in ramen_list:
-            ramen_shops.append(shop["ramen"])
+            ramen_shops.append(shop["name"])
 
     # 중복 제거
     ramen_shops = list(set(ramen_shops))
