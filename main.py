@@ -128,11 +128,33 @@ async def 라멘(ctx, *, name):
 async def woongseong(ctx):
     await ctx.send("웅성!")
 
+'''!선택 명령어'''
 @bot.command()
-async def 선택(ctx, *, raw_options):
-    options = [opt.strip() for opt in raw_options.split(",") if opt.strip()]
+async def 선택(ctx, *, raw_options=None):
+    #라멘 전체 리스트
+    ramen_shops = []
 
-    if len(options) < 2:
+    for ramen_list in ramen_data.values():
+        for shop in ramen_list:
+            ramen_shops.append(shop["namen"])
+
+    # 중복 제거
+    ramen_shops = list(set(ramen_shops))
+
+    # 옵션 입력
+    if raw_options:
+        options = [opt.strip() for opt in raw_options.split(",") if opt.strip()]
+
+        # 유효한 라멘집만 필터링
+        valid_options = [opt for opt in options if opt in ramen_shops]
+
+        # 잘못된 경우
+        if len(valid_options) != len(options):
+            await ctx.send("라멘집 리스트에 있는 라멘집만 입력해주세요.")
+            return
+
+    # 라멘집 한 개만 입력 했을 때
+    if len(valid_options) < 2:
         await ctx.send("두 개 이상 입력해주세요.\n예시: 류진, 하쿠텐")
         return
     
