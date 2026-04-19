@@ -66,7 +66,7 @@ class RamenView(discord.ui.View):
 
         await interaction.response.send_message(msg, ephemeral=False)
 
-    '''캐치테이블 버튼'''
+    '''캐치테이블 예약하기 버튼'''
     @discord.ui.button(label="📅 예약하기", style=discord.ButtonStyle.success)
     async def reserve(self, interaction: discord.Interaction, button: discord.ui.Button):
 
